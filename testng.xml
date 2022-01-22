@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebTestFramework">
+  <test name = "Parallel Tests" parallel = "methods" thread-count = "2">
+  <!-- Tests can be run by extending this to support for different browser and device type -->
+   <parameter name="browser" value="FIREFOX"/>
+   <parameter name="deviceType" value="DESKTOP"/>
+    <classes>
+      <class name="org.selenium.tests.SpokeoPageTests"/>
+    </classes>
+  </test> 
+</suite> 
